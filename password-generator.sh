@@ -5,7 +5,7 @@
 echo "This is a simple password generator"
 
 echo "Please enter the length of the password: "
-read PASS_LENGTH
+read PASS_LENGTH # the read here basically first prompts the user and then uses that information to write inside to newly created PASS_LENGTH variable, to be used later on inside the for loop
 
 # simple for loop
 
