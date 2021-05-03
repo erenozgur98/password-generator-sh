@@ -12,4 +12,6 @@ read PASS_LENGTH # the read here basically first prompts the user and then uses 
 for p in $(seq 1);
     do
         openssl rand -base64 48 | cut -c1-$PASS_LENGTH #cutting from column1 or first letter all the way to length of the password
+        # base64 for basic password generator, random base64 characters. it has limited characters similar to the alphabet
+        # the reason we put 48 is the length of the characters are 48 inside the base64, that specifies the length of the characters to use. 48 means all 48 can be used.
 done
